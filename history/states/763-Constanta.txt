@@ -1,0 +1,28 @@
+state={
+	id=763
+	name="STATE_763"
+	state_category = city
+	history={
+		owner = SOV
+		victory_points = { 657 3 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 1
+			air_base = 3
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		657 687 3076 9635 
+	}
+	manpower=35000
+	buildings_max_level_factor=1.000
+}
