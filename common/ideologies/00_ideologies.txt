@@ -1,0 +1,467 @@
+ideologies = {
+	
+	Socialist_Revolution = {
+		
+		types = {
+		
+			Bolshevism = {
+			}
+
+			Menshevism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_SOCIALIST_REVOLUTIONARY_1"
+		}
+		
+		color = { 255 0 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_socialist_revolutionary = yes
+		
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0.05
+			join_faction_tension = 0.025
+			lend_lease_tension = 0.01
+			send_volunteers_tension = 0.02
+			guarantee_tension = 0.015
+			take_states_cost_factor = 0.125
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+
+		can_be_boosted = yes
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+Democratic_Socialism = {
+		
+		types = {
+		
+			Syndicalism = {
+			}
+			
+			Market_socialism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_1"
+			
+		}
+		
+		color = { 255 0 85 }
+		
+		war_impact_on_world_tension = 0.40
+		faction_impact_on_world_tension = 0.2
+		
+		ai_demoratic_socialist = yes
+		
+		rules = {
+			can_declare_war_on_same_ideology = no # Declare war on same ideology. Not required
+			can_force_government = yes # Can change ideology in peace deal. Required
+			can_send_volunteers = yes # Can send volunteers. Required
+			can_puppet = no# Can puppet a nation at peace deal. Required
+			can_lower_tension = yes # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = yes # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	Liberalism = {
+		
+		types = {
+		
+			Social_Democracy = {
+			}
+			
+			Libertarianism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_LIBERAL_1"
+			
+		}
+		
+		color = { 255 255 0 }
+		
+		war_impact_on_world_tension = -0.1		#Commie less threatening
+		faction_impact_on_world_tension = -0.1
+		
+		ai_liberal = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_declare_war_on_same_ideology = no # Declare war on same ideology. Not required
+			can_force_government = yes # Can change ideology in peace deal. Required
+			can_send_volunteers = no # Can send volunteers. Required
+			can_puppet = no# Can puppet a nation at peace deal. Required
+			can_lower_tension = yes # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = yes # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	Conservatism = {
+		
+		types = {
+		
+			Social_Conservatism = {
+			}
+			
+			Business_Conservatism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_CONSERVATIVE_1"
+
+		}
+		
+		color = { 255 255 0 }
+		
+		war_impact_on_world_tension = -0.1		#Commie less threatening
+		faction_impact_on_world_tension = -0.1
+		
+		ai_conservative = yes
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes 
+			can_send_volunteers = yes 
+			can_puppet = yes 
+			can_lower_tension = yes 
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes 
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	Constitutional_Monarchism = {
+	
+		types = {
+			Parliamentary_Monarchism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_CONSTITUTIONAL_MONARCHY_1"
+			
+		}
+		
+		color = { 0 0 255 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		
+		war_impact_on_world_tension = 0.0
+		faction_impact_on_world_tension = 0.0
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_constitutional_monarchy = yes
+	}
+
+
+	Josephinism = {
+		
+		types = {
+		
+			Josephinism = {
+			}
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_JOSEPHINIST_1"
+		}
+		
+		color = { 153 0 153 }
+		
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.125
+		
+		ai_josephinist = yes
+		
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	Absolutism = {
+		
+		types = {
+		
+			Theocracy = {
+			}
+
+			Absolutism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ABSOLUTIST_1"
+		}
+		
+		color = { 102 0 51 }
+		
+		war_impact_on_world_tension = 0.5		#Commie less threatening
+		faction_impact_on_world_tension = 0.25
+		
+		ai_absolutist = yes
+		
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	Nationalist_Monarchism = {
+		
+		types = {
+		
+			Carlism = {
+			}
+
+			Monarcho-Fascism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_NATIONAL_MONARCHIST_1"
+		}
+		
+		color = { 153 76 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_national_monarchy = yes
+		
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	Nationalist_Revolution = {
+		
+		types = {
+		
+			Integralism = {
+			}
+
+			Ethno-Nationalism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_NATREV_1"
+			
+		}
+		
+		color = { 0 0 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = yes # uses the commie AI behaviour
+		
+		rules = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0
+			join_faction_tension = 0
+			lend_lease_tension = 0
+			send_volunteers_tension = 0 #(0 to 1)
+			guarantee_tension = 0 #(0 to 1)
+			take_states_cost_factor = 0.25 #(-1 to 1)
+			annex_cost_factor = 0.5 #(-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.5 # (0 to 1)
+			drift_defence_factor = 0 # (-1 to 1)
+			puppet_cost_factor = -0.3 # (-1 to 1)
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}

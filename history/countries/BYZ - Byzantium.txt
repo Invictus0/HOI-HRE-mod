@@ -109,24 +109,24 @@ set_war_support = 0.80
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 13
+		Absolutist = { 
+			popularity = 55
 		}
 
-		fascism = {
-			popularity = 12
+		Josephinist = {
+			popularity = 3
 		}
 		
-		communism = {
-			popularity = 0
+		Constitutional_Monarchy = {
+			popularity = 2
 		}
 
-		neutrality = {
-			popularity = 75
+		Liberalism = {
+			popularity = 25
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = Absolutism
 	last_election = "1932.10.16"
 	election_frequency = 38
 	elections_allowed = no

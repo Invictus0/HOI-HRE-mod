@@ -1,0 +1,33 @@
+###########################
+# Imperial Events
+###########################
+
+add_namespace = Imperial
+
+# The Ottoine Reforms
+country_event = {
+	id = imperial.1
+	title = imperial.1.t
+	desc = imperial.1.d
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	is_triggered_only = no
+
+	trigger = {
+		tag = HRE
+		AND = {
+			date > 1936.2.1
+		}
+	}
+
+	mean_time_to_happenn = {days = 7}
+	
+	option = { # Push back
+		name = Okay
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+		target = ENG
+		type = annex_everything
+		}	
+	}
+	

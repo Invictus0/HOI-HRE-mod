@@ -1,0 +1,14 @@
+state={
+	id=765
+	name="STATE_765"
+	state_category = city
+	history ={
+	owner = POL
+	add_core_of = POL
+	}
+	provinces={
+		243 279 3295 6347 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

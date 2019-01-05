@@ -1,0 +1,80 @@
+ideas = {
+
+	country = {
+		disorganized_military = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.3
+				army_defence_factor = -0.3
+				army_attack_factor = -0.3
+			}
+
+		country = {
+			anti-imperial_nationalism = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				SuBvErSiVe
+			}
+
+	country = {
+		frightened_investors = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				trade_deal_opinion_factor = -0.3
+				research_time_factor = 0.3
+			}		
+		}
+	country = {
+		chaos_realm = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.3
+				war_support_factor = -0.3
+				stability_factor = -0.3
+			}
+	}

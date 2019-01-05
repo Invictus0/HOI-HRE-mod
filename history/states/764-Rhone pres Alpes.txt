@@ -1,0 +1,14 @@
+state={
+	id=764
+	name="STATE_764"
+	state_category = city
+	history ={
+	owner = ITA
+	add_core_of = FRA
+	}
+	provinces={
+		641 3650 6639 6668 9590 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,23 +1,22 @@
-﻿capital = 12
+﻿capital = 112
 
-oob = "EPL_1936"
+oob = "POR_1936"
 
 set_research_slots = 3
-
-add_ideas = {
-}
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	gw_artillery = 1
 	tech_support = 1		
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
-	early_destroyer = 1
+	CAS1 = 1
 	early_submarine = 1
-	early_heavy_cruiser = 1
-	tech_recon = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	transport = 1
 }
 
 1939.1.1 = {
@@ -35,9 +34,8 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "ICE_1939"
+	oob = "POR_1939"
 	set_technology = {
-		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
 		infantry_weapons2 = 1
@@ -45,10 +43,10 @@ set_technology = {
 
 		#doctrines
 		air_superiority = 1
-		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
 		battlefleet_concentration = 1
+		convoy_sailing = 1
 		submarine_operations = 1
 
 		#electronics
@@ -72,37 +70,39 @@ set_technology = {
 	}
 }
 
-set_convoys = 30
-set_stability = 0.75
-
+set_convoys = 50
 set_politics = {
 
 	parties = {
-		Socialist_Revolutionary = { 
-			popularity = 75
+		democratic = {
+			popularity = 0
 		}
 
-		Conservatism = {
-			popularity = 15
+		fascism = {
+			popularity = 5
 		}
 		
-		Syndicalism = {
-			popularity = 10
+		communism = {
+			popularity = 5
+		}
+		
+		neutrality = {
+			popularity = 90
 		}
 	}
 	
-	ruling_party = Socialist_Revolutionary
-	last_election = "1933.10.16"
-	election_frequency = 36
-	elections_allowed = no
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 5
+			democratic = {
+				popularity = 0
 			}
 
 			fascism = {
@@ -110,61 +110,68 @@ set_politics = {
 			}
 			
 			communism = {
-				popularity = 95
-			}
-
-			neutrality = {
 				popularity = 0
+			}
+			
+			neutrality = {
+				popularity = 100
 			}
 		}
 		
-		ruling_party = communism
-		last_election = "1933.10.16"
-		election_frequency = 36
-		elections_allowed = no
+		ruling_party = neutrality
+		last_election = "1938.10.30"
+		election_frequency = 48
+		elections_allowed = yes
 	}
 }
 
+set_convoys = 100
+set_stability = 0.75
+
+
 create_country_leader = {
-#	name = "Sveinn Björnsson"
-#	desc = ""
-#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-#	expire = "1965.1.1"
-#	ideology = conservatism
+	name = "António de Oliveira Salazar"
+	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+	picture = "Portrait_Portugal_Antonio_de_Oliveira_Salazar.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-#	name = "Johannes Valurson"
-#	desc = ""
-#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-#	expire = "1965.1.1"
-#	ideology = fascism_ideology
+	name = "Bento Gonçalves"
+	desc = "POLITICS_BENTO_GONCALVES_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-#	name = "Haraldur Gudmunsson"
-#	desc = ""
-#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
+	name = "Francisco de Barcelos Rolão Preto"
+	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-#	name = "Einar Olgeirsson"
-#	desc = ""
-#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-#	expire = "1965.1.1"
-#	ideology = marxism
-	traits = {
-		#
-	}
+
+create_corps_commander = {
+	name = "José Vicente de Freitas"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
 }
+

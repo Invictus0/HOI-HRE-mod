@@ -5,6 +5,9 @@ oob = "HRE_1936"
 set_research_slots = 4
 
 add_ideas = {
+	disorganized_military
+	frightened_investors
+	chaos_realm
 	
 }
 
@@ -109,24 +112,24 @@ set_war_support = 0.80
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 13
+		Josephinism = { 
+			popularity = 65
 		}
 
-		fascism = {
-			popularity = 12
+		Constitutional_Monarchy = {
+			popularity = 15
 		}
 		
-		communism = {
-			popularity = 0
+		Theocracy = {
+			popularity = 15
 		}
 
-		neutrality = {
-			popularity = 75
+		Absolutism = {
+			popularity = 5
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = Josephinism
 	last_election = "1932.10.16"
 	election_frequency = 38
 	elections_allowed = no
