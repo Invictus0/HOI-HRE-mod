@@ -1,80 +1,557 @@
 ideas = {
 
 	country = {
-		disorganized_military = {
+		conscription_crisis_1 = {
 			
 			
 			allowed = {
-				always = no
+				original_tag = HRE
 			}
 
 			allowed_civil_war = {
-				no
+				always = no
 			}
 
 			removal_cost = -1
 			
 			modifier = {
 				conscription_factor = -0.3
-				army_defence_factor = -0.3
-				army_attack_factor = -0.3
 			}
+		}
+	}
 
-		country = {
-			anti-imperial_nationalism = {
+	country = {
+		conscription_crisis_2 = {
 			
 			
 			allowed = {
-				always = no
+				original_tag = HRE
 			}
 
 			allowed_civil_war = {
-				no
+				always = no
 			}
 
 			removal_cost = -1
 			
 			modifier = {
-				SuBvErSiVe
+				conscription_factor = -0.2
 			}
+		}
+	}
 
 	country = {
-		frightened_investors = {
+		conscription_crisis_3 = {
 			
 			
 			allowed = {
-				always = no
+				original_tag = HRE
 			}
 
 			allowed_civil_war = {
-				no
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.1
+			}
+		}
+	}		
+
+	country = {
+		anti-imperialism_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				army_attack_factor = -0.3
+			}
+		}
+	}
+
+	country = {
+		anti-imperialism_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				army_attack_factor = -0.2
+			}
+		}
+	}
+
+	country = {
+		anti-imperialism_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+			modifier = {
+				army_attack_factor = -0.1
+			}
+		}
+	}
+
+	country = {
+		military_complacency_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = -0.75
+			}
+			
+			modifier = {
+				army_defense_factor = -0.2
+				}
+			}
+		}
+
+	country = {
+		military_complacency_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = -0.50
+			}
+			
+			modifier = {
+				army_defense_factor = -0.1
+				}
+			}
+		}
+
+	country = {
+		military_complacency_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = -0.25
+				}			
+			}
+		}				
+	
+
+		country = {
+			subversives_and_spies_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = 0.30
+			}
+		}
+	}
+
+	country = {
+			subversives_and_spies_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = 0.20
+			}
+		}
+	}
+
+	country = {
+			subversives_and_spies_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = 0.10
+			}
+		}
+	}	
+
+	country = {
+		scientific_exodus_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = 0.3
+			}		
+		}
+	}
+
+	country = {
+		scientific_exodus_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = 0.2
+			}		
+		}
+	}	
+
+	country = {
+		scientific_exodus_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = 0.1
+			}		
+		}
+	}
+	
+	country = {
+		stifled_industry_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
 			}
 
 			removal_cost = -1
 			
 			modifier = {
 				consumer_goods_factor = 0.3
-				trade_deal_opinion_factor = -0.3
-				research_time_factor = 0.3
 			}		
 		}
+	}
+
 	country = {
-		chaos_realm = {
+		stifled_industry_2 = {
 			
 			
 			allowed = {
-				always = no
+				original_tag = HRE
 			}
 
 			allowed_civil_war = {
-				no
+				always = no
 			}
 
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 0.3
-				war_support_factor = -0.3
+				consumer_goods_factor = 0.2
+			}		
+		}
+	}
+
+
+	country = {
+		stifled_industry_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}		
+		}
+	}
+
+	country = {
+		frightened_investors_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.3
+			}		
+		}
+	}
+
+
+	country = {
+		frightened_investors_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.2
+			}		
+		}
+	}
+
+
+	country = {
+		frightened_investors_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.1
+			}		
+		}
+	}
+
+	country = {
+		chaos_realm_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
 				stability_factor = -0.3
 			}
+		}
+	}
+
+	country = {
+		chaos_realm_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+	}
+
+	country = {
+		chaos_realm_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	}
+
+
+	country = {
+		war-weary_populace_1 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.3				
+			}
+		}
+	}
+
+	country = {
+		war-weary_populace_2 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.2				
+			}
+		}
+	}
+
+	country = {
+		war-weary_populace_3 = {
+			
+			
+			allowed = {
+				original_tag = HRE
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.1				
+			}
+		}
 	}

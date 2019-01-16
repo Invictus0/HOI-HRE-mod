@@ -5,9 +5,16 @@ oob = "HRE_1936"
 set_research_slots = 4
 
 add_ideas = {
-	disorganized_military
-	frightened_investors
-	chaos_realm
+	conscription_crisis_1
+	anti-imperialism_1
+	military_complacency_1
+	subversives_and_spies_1
+	scientific_exodus_1
+	stifled_industry_1
+	frightened_investors_1
+	chaos_realm_1
+	war-weary_populace_1
+
 	
 }
 
